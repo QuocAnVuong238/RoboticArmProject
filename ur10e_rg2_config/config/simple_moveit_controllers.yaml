@@ -1,0 +1,28 @@
+controller_list:
+  - name: Left_finger_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - left_inner_knuckle_joint
+      - left_outer_knuckle_joint
+      - left_inner_finger_joint
+  - name: Right_finger_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - right_inner_knuckle_joint
+      - right_outer_knuckle_joint
+      - right_inner_finger_joint
+  - name: Gripper_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - left_inner_knuckle_joint
+      - left_outer_knuckle_joint
+      - left_inner_finger_joint
+      - right_inner_knuckle_joint
+      - right_outer_knuckle_joint
+      - right_inner_finger_joint

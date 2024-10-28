@@ -1,0 +1,84 @@
+Left_finger_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - left_inner_knuckle_joint
+    - left_outer_knuckle_joint
+    - left_inner_finger_joint
+  gains:
+    left_inner_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_outer_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_inner_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+Right_finger_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - right_inner_knuckle_joint
+    - right_outer_knuckle_joint
+    - right_inner_finger_joint
+  gains:
+    right_inner_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_outer_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_inner_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+Gripper_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - left_inner_knuckle_joint
+    - left_outer_knuckle_joint
+    - left_inner_finger_joint
+    - right_inner_knuckle_joint
+    - right_outer_knuckle_joint
+    - right_inner_finger_joint
+  gains:
+    left_inner_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_outer_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    left_inner_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_inner_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_outer_knuckle_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_inner_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

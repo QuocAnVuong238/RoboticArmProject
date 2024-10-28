@@ -1,0 +1,27 @@
+controller_list:
+  - name: fake_Left_finger_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_inner_knuckle_joint
+      - left_outer_knuckle_joint
+      - left_inner_finger_joint
+  - name: fake_Right_finger_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - right_inner_knuckle_joint
+      - right_outer_knuckle_joint
+      - right_inner_finger_joint
+  - name: fake_Gripper_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - left_inner_knuckle_joint
+      - left_outer_knuckle_joint
+      - left_inner_finger_joint
+      - right_inner_knuckle_joint
+      - right_outer_knuckle_joint
+      - right_inner_finger_joint
+initial:  # Define initial robot poses per group
+  - group: Left_finger
+    pose: Left_finger_close
+  - group: Right_finger
+    pose: Right_finger_close
